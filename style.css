@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* System font stack - similar to Next.js */
+    margin: 0;
+    padding: 0;
+    background-color: #111827; /* Dark background - Tailwind Slate 900 */
+    color: #f9fafb; /* Light text - Tailwind Gray 50 */
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased; /* Better font rendering for webkit */
+    -moz-osx-font-smoothing: grayscale; /* Better font rendering for Firefox on macOS */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #1f2937; /* Slightly lighter dark header - Tailwind Gray 800 */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em; /* Slightly larger header font */
+    font-weight: 700; /* Bold font weight */
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #2d3748; /* Darker navigation background - Tailwind Gray 700 */
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #4a5568; /* Subtle border - Tailwind Gray 600 */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for navigation links */
+    justify-content: center; /* Center links horizontally */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #cbd5e0; /* Light gray navigation link color - Tailwind Gray 300 */
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    font-weight: 500; /* Medium font weight */
+    display: block; /* Make links block-level for better padding */
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #6366f1; /* Vibrant blue hover/active color - Tailwind Indigo 500 */
+    color: #fff;
+}
+nav ul li a.active {
+    font-weight: 700; /* Make active link bolder */
+}
+
+
+/* Main Content Styles */
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: #1f2937; /* Slightly lighter dark section background - Tailwind Gray 800 */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    border: 1px solid #374151; /* Subtle border - Tailwind Gray 700 */
+}
+
+section h2, section h3 {
+    color: #93c5fd; /* Vibrant blue headings - Tailwind Blue 300 */
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600; /* Semi-bold headings */
+}
+
+section h2 {
+    font-size: 2em;
+}
+
+section h3 {
+    font-size: 1.6em;
+}
+
+
+section p, section ul {
+    margin-bottom: 20px;
+    color: #d1d5db; /* Slightly lighter text in sections - Tailwind Gray 300 */
+}
+
+section ul {
+    padding-left: 25px;
+}
+
+section li {
+    margin-bottom: 8px; /* Space between list items */
+}
+
+.profile-image {
+    max-width: 250px; /* Slightly larger profile image */
+    border-radius: 50%;
+    display: block;
+    margin: 30px auto;
+    border: 3px solid #6366f1; /* Blue border for profile image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for profile image */
+}
+
+.journey-section, .future-section, .contact-section {
+    margin-bottom: 35px;
+    padding: 25px;
+    border: 1px solid #4a5568; /* Darker border for subsections - Tailwind Gray 600 */
+    border-radius: 8px;
+    background-color: #2d3748; /* Slightly darker background for subsections - Tailwind Gray 700 */
+}
+
+.journey-section h3, .future-section h3, .contact-section h3 {
+    color: #a78bfa; /* Purple for subsection headings - Tailwind Purple 300 */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #0f172a; /* Even darker footer - Tailwind Slate 950 */
+    color: #cbd5e0; /* Light gray footer text - Tailwind Gray 300 */
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em; /* Slightly smaller footer font */
+    border-top: 1px solid #374151; /* Subtle top border - Tailwind Gray 700 */
+}
